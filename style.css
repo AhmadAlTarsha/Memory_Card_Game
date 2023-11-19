@@ -1,0 +1,878 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  
+}
+
+.blockimg {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  box-shadow: 3px 2px 2px rgba(47, 255, 54, 0.497);
+  cursor: pointer;
+  pointer-events: none;
+}
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.loginDiv {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  height: 400px;
+  padding: 20px;
+  border: 2px solid #778d45;
+  align-items: flex-start;
+  justify-content: center;
+  position: absolute;
+  top: 25%;
+  box-shadow: 6px 3px 3px rgba(47, 255, 54, 0.551);
+  gap: 30px;
+}
+.buttonPalyNow {
+  background-color: rgba(47, 255, 54, 0.784);
+  padding: 10px;
+}
+
+.inputUserName {
+  padding: 5px;
+  color: black;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+ 
+.img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  box-shadow: 3px 2px 2px rgba(47, 255, 54, 0.497);
+  cursor: pointer;
+}
+
+#playerName {
+  width: 100%;
+  display: flex;
+
+  align-items: center;
+  color: rgb(47, 255, 54);
+  font-size: 20px;
+  background-color: transparent;
+
+  text-transform: capitalize;
+  justify-content: space-between;
+}
+span {
+  color: white;
+  background-color: transparent;
+  justify-content: center;
+  align-items: center;
+}
+
+#userNamef::placeholder {
+  color: red;
+  opacity: 0.8;
+}
+
+#counter {
+  color: white;
+  background-color: transparent;
+  font-size: 20px;
+}
+#resultScreen {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  height: 400px;
+  padding: 20px;
+  border: 2px solid #778d45;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 25%;
+  box-shadow: 6px 3px 3px rgba(47, 255, 54, 0.551);
+  gap: 30px;
+}
+#replayButton {
+  background-color: transparent;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 20px;
+  color: #00A9FF;
+  border: 2px solid #00A9FF;
+  border-radius: 10px;
+}
+#resultText {
+  color: #00A9FF;
+  background-color: transparent;
+}
+#RuleDiv{
+  width: 50%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: inherit;
+  align-items: center;
+  background-color: #406882;
+  padding: 20px;
+  border: 1px solid #DDF2FD ;
+  border-radius: 20px;
+  gap: 40px;
+  padding: 20px 30px;
+  text-decoration: solid;
+  line-height: 1.5;
+  font-size: 20px;
+
+}
+#masterRuleDiv{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  
+}
+#textRule{
+  text-align:  justify  ;
+  color: #DDF2FD;
+}
+#goHome{
+  
+    background-color: #ddf2fd;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 7px;
+    font-family: "Courier New", Courier, monospace;
+ 
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  #logo {
+    margin: 5px;
+    width: 100%;
+    height: 100px;
+    background-color: transparent;
+  }
+  .loginDiv {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    border: 2px solid #778d45;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0%;
+    box-shadow: 6px 3px 3px rgba(47, 255, 54, 0.551);
+    gap: 20px;
+    background-color: #164863;
+  }
+  #playerName {
+    width: 100%;
+    display: flex;
+    padding: 0px 5px;
+    align-items: center;
+    color: white;
+    font-size: 16px;
+    background-color: #176b87;
+
+    text-transform: capitalize;
+    justify-content: space-between;
+  }
+  .inputUserName {
+    padding: 5px;
+    color: black;
+    font-size: 14px;
+    text-transform: capitalize;
+    border: 1px solid white;
+    border-radius: 7px;
+    outline: transparent;
+  }
+
+  .buttonPalyNow {
+    background-color: #ddf2fd;
+    padding: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 7px;
+  }
+  #playRule{
+    color:#ddf2fd ;
+    font-size: 16px;
+    text-decoration: none;
+   }
+  #userNamef::placeholder {
+    color: red;
+    opacity: 0.8;
+    font-size: 16px;
+    text-transform: capitalize;
+  }
+
+  #passwordPlaceHolder::placeholder {
+    color: lightgray;
+    opacity: 0.8;
+    text-transform: capitalize;
+    font-size: 16px;
+  }
+  #innerDivCounter {
+    background-color: transparent;
+    font-size: 20px;
+    color: white;
+  }
+  #counter {
+    color: white;
+    background-color: transparent;
+    font-size: 20px;
+  }
+  .mainDivCard {
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    background-color: #164863;
+ 
+    justify-content: space-between;
+    align-items: center;
+  }
+  .layoutPage {
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+    justify-content: center;
+    background-color: inherit;
+    position: absolute;
+    top: 0%;
+  }
+  .img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 88%;
+    height: 65%;
+    border-radius: 5px;
+    box-shadow: 14px 8px 8px #406882;
+    align-self: center;
+    cursor: pointer;
+  }
+  .blockimg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 88%;
+    height: 65%;
+    border-radius: 5px;
+    box-shadow: 3px 2px 2px rgba(47, 255, 54, 0.497);
+    align-self: center;
+    cursor: pointer;
+    pointer-events: none;
+  }
+  #resultScreen {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    border: 2px solid #778d45;
+    align-items: center;
+    justify-content: center;
+    top: 0px;
+    background-color: #164863;
+    box-shadow: 6px 3px 3px rgba(47, 255, 54, 0.551);
+    gap: 100px;
+  }
+  #RuleDiv{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: inherit;
+    align-items: center;
+    background-color: #406882;
+    padding: 20px;
+    border: 1px solid #DDF2FD ;
+    border-radius: 20px;
+    gap: 40px;
+    padding: 20px 30px;
+    text-decoration: solid;
+    line-height: 1.5;
+    font-size: 20px;
+  
+  }
+  #masterRuleDiv{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    
+  }
+  #textRule{
+    text-align:  justify  ;
+    color: #DDF2FD;
+    font-family: serif;
+  }
+  #goHome{
+    
+      background-color: #ddf2fd;
+      padding: 10px;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 7px;
+      font-family: "Courier New", Courier, monospace;
+   
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .loginDiv {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    border: 2px solid #778d45;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0%;
+    box-shadow: 6px 3px 3px rgba(47, 255, 54, 0.551);
+    gap: 20px;
+    background-color: #164863;
+  }
+  #logo {
+    margin: 5px;
+    width: 100%;
+    height: 50%;
+    background-color: transparent;
+  }
+
+  .inputUserName {
+    padding: 5px;
+    color: black;
+    font-size: 14px;
+    text-transform: capitalize;
+    border: 1px solid white;
+    border-radius: 7px;
+    outline: transparent;
+  }
+
+  .buttonPalyNow {
+    background-color: #ddf2fd;
+    padding: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 7px;
+  }
+  #userNamef::placeholder {
+    color: red;
+    opacity: 0.8;
+    font-size: 16px;
+    text-transform: capitalize;
+  }
+
+  #innerDivCounter {
+    background-color: transparent;
+    font-size: 20px;
+  }
+  #counter {
+    color: white;
+    background-color: transparent;
+    font-size: 20px;
+  }
+
+  .mainDivCard {
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    background-color: #164863;
+
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #playerName {
+    width: 100%;
+    display: flex;
+    padding: 0px 5px;
+    align-items: center;
+    color: white;
+    font-size: 16px;
+    background-color: #176b87;
+
+    text-transform: capitalize;
+    justify-content: space-between;
+  }
+
+  .layoutPage {
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    background-color: inherit;
+    position: absolute;
+    top: 0%;
+  }
+  .img {
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+    box-shadow: 14px 8px 8px #406882;
+    cursor: pointer;
+  }
+  .blockimg {
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+    box-shadow: 3px 2px 2px rgba(47, 255, 54, 0.497);
+    cursor: pointer;
+    pointer-events: none;
+  }
+  #resultScreen {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    border: 2px solid #778d45;
+    align-items: center;
+    justify-content: center;
+    top: 0px;
+    background-color: #164863;
+    box-shadow: 6px 3px 3px rgba(47, 255, 54, 0.551);
+    gap: 100px;
+  }
+  
+  #playRule{
+    color:#ddf2fd ;
+    font-size: 16px;
+    text-decoration: none;
+   }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .loginDiv {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    border: 2px solid #778d45;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0%;
+    box-shadow: 6px 3px 3px rgba(47, 255, 54, 0.551);
+    gap: 20px;
+    background-color: #164863;
+  }
+  #logo {
+    margin: 5px;
+    width: 100%;
+    height: 50%;
+    background-color: transparent;
+  }
+  .inputUserName {
+    padding: 5px;
+    color: black;
+    font-size: 14px;
+    text-transform: capitalize;
+    border: 1px solid white;
+    border-radius: 7px;
+    outline: transparent;
+  }
+
+  .buttonPalyNow {
+    background-color: #ddf2fd;
+    padding: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 7px;
+  }
+  #userNamef::placeholder {
+    color: red;
+    opacity: 0.8;
+    font-size: 16px;
+    text-transform: capitalize;
+  }
+
+  #innerDivCounter {
+    background-color: transparent;
+    font-size: 20px;
+  }
+  #counter {
+    color: white;
+    background-color: transparent;
+    font-size: 20px;
+  }
+  .mainDivCard {
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    background-color: #164863;
+
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #playerName {
+    width: 100%;
+    display: flex;
+    padding: 0px 5px;
+    align-items: center;
+    color: white;
+    font-size: 16px;
+    background-color: #176b87;
+
+    text-transform: capitalize;
+    justify-content: space-between;
+  }
+
+  .layoutPage {
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    /* border: 2px solid gray; */
+    justify-content: center;
+    background-color: inherit;
+    position: absolute;
+    top: 0%;
+  }
+  .img {
+    width: 130px;
+    height: 130px;
+    border-radius: 5px;
+    box-shadow: 14px 8px 8px #406882;
+    cursor: pointer;
+  }
+  .blockimg {
+    width: 130px;
+    height: 130px;
+    border-radius: 5px;
+    box-shadow: 3px 2px 2px rgba(47, 255, 54, 0.497);
+    cursor: pointer;
+    pointer-events: none;
+  }
+  #resultScreen {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    border: 2px solid #778d45;
+    align-items: center;
+    justify-content: center;
+    top: 0px;
+    background-color: #164863;
+    box-shadow: 6px 3px 3px rgba(47, 255, 54, 0.551);
+    gap: 100px;
+  }
+
+  #playRule{
+    color:#ddf2fd ;
+    font-size: 16px;
+    text-decoration: none;
+   }
+}
+@media (min-width: 1025px) and (max-width: 1200px) {
+  #logo {
+    margin: 5px;
+    width: 100%;
+    height: 50%;
+    background-color: transparent;
+  }
+  .loginDiv {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    border: 2px solid #778d45;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0%;
+    box-shadow: 6px 3px 3px rgba(47, 255, 54, 0.551);
+    gap: 20px;
+    background-color: #164863;
+  }
+  #logo {
+    margin: 5px;
+    width: 100%;
+    height: 50%;
+    background-color: transparent;
+  }
+  .inputUserName {
+    padding: 5px;
+    color: black;
+    font-size: 14px;
+    text-transform: capitalize;
+
+    border: 1px solid white;
+    border-radius: 7px;
+    outline: transparent;
+  }
+
+  .buttonPalyNow {
+    background-color: #ddf2fd;
+    padding: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 7px;
+  }
+
+  #userNamef::placeholder {
+    color: red;
+    opacity: 0.8;
+    font-size: 16px;
+    text-transform: capitalize;
+  }
+
+  #passwordPlaceHolder::placeholder {
+    color: lightgray;
+    opacity: 0.8;
+    text-transform: capitalize;
+    font-size: 16px;
+  }
+  #innerDivCounter {
+    background-color: transparent;
+    font-size: 20px;
+  }
+  #counter {
+    color: white;
+    background-color: transparent;
+    font-size: 20px;
+  }
+  .mainDivCard {
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    background-color: #164863;
+
+    justify-content: space-between;
+    align-items: center;
+  }
+  #playerName {
+    width: 100%;
+    display: flex;
+    padding: 0px 5px;
+    align-items: center;
+    color: white;
+    font-size: 16px;
+    background-color: #176b87;
+
+    text-transform: capitalize;
+    justify-content: space-between;
+  }
+  .layoutPage {
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+    justify-content: center;
+    background-color: inherit;
+    position: absolute;
+    top: 0%;
+  }
+  .img {
+    width: 130px;
+    height: 130px;
+    border-radius: 5px;
+    box-shadow: 14px 8px 8px #406882;
+    cursor: pointer;
+  }
+  .blockimg {
+    width: 130px;
+    height: 130px;
+    border-radius: 5px;
+    box-shadow: 3px 2px 2px rgba(47, 255, 54, 0.497);
+    cursor: pointer;
+    pointer-events: none;
+  }
+  #resultScreen {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    border: 2px solid #778d45;
+    align-items: center;
+    justify-content: center;
+    top: 0px;
+    background-color: #164863;
+    box-shadow: 6px 3px 3px rgba(47, 255, 54, 0.551);
+    gap: 100px;
+  }
+
+  #playRule{
+    color:#ddf2fd ;
+    font-size: 16px;
+    text-decoration: none;
+   }
+}
+/* !!-------------------------------------------------- */
+@media (min-width: 1201px) and (max-width: 4000px) {
+  body{
+    background-color: #9BBEC8;
+  }
+  .loginDiv {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: #164863;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0%;
+
+    gap: 20px;
+  }
+  #logo {
+    margin: 5px;
+    width: 100%;
+    height: 50%;
+    background-color: transparent;
+  }
+
+  .inputUserName {
+    padding: 10px;
+    color: black;
+    font-size: 16px;
+    text-transform: capitalize;
+
+    border: 1px solid white;
+    border-radius: 7px;
+    outline: transparent;
+  }
+
+  .buttonPalyNow {
+    background-color: #ddf2fd;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 7px;
+    font-family: "Courier New", Courier, monospace;
+  }
+
+  #userNamef::placeholder {
+    color: red;
+    opacity: 0.8;
+    font-size: 16px;
+    text-transform: capitalize;
+  }
+
+  #passwordPlaceHolder::placeholder {
+    color: lightgray;
+    opacity: 0.8;
+    text-transform: capitalize;
+    font-size: 16px;
+  }
+  #innerDivCounter {
+    background-color: transparent;
+    font-size: 25px;
+  }
+  #counter {
+    color: white;
+    background-color: transparent;
+    font-size: 25px;
+  }
+  .mainDivCard {
+    width: 100%;
+    height: 100%;
+    
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    background-color: #164863;
+
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  #playerName {
+    width: 100%;
+    display: flex;
+    padding: 0px 30px;
+    align-items: center;
+    color: white;
+    font-size: 16px;
+    background-color:  #176B87;
+  
+    text-transform: capitalize;
+    justify-content: space-between;
+  }
+  .layoutPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    height: 100%;
+     margin: 5px 0px;
+    justify-content: space-between;
+    background-color: inherit;
+    position: absolute;
+    top: 0px;
+    border-radius: 20px;
+     
+  }
+  .img {
+    width: 155px;
+    height: 155px;
+    border-radius: 20px;
+    box-shadow: 14px 8px 8px #406882;
+    cursor: pointer;
+    
+  }
+  .blockimg {
+    width: 155px;
+    height: 155px;
+    border-radius: 5px;
+    box-shadow: 3px 2px 2px rgba(47, 255, 54, 0.497);
+    cursor: pointer;
+    pointer-events:none ;
+  }
+  #resultScreen {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    border: 2px solid #778d45;
+    align-items: center;
+    justify-content: center;
+    top: 0px;
+    background-color: #164863;
+    box-shadow: 6px 3px 3px rgba(47, 255, 54, 0.551);
+    gap: 100px;
+  }
+
+  #playRule{
+    color:#ddf2fd ;
+    font-size: 16px;
+    text-decoration: none;
+   }
+}
